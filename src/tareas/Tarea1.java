@@ -5,5 +5,6 @@ public class Tarea1 {
         /*Crear una clase java e imprimir tu nombre en la salida o consola.*/
 
         System.out.println("Anthony Davis, Yeren Martinez");
+
     }
 }
