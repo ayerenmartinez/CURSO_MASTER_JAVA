@@ -13,6 +13,16 @@ public class PrimitivoCaracteres {
         System.out.println("char corresponde en bites = " + Character.SIZE);
         System.out.println("el máximo valor para char = " + Character.MAX_VALUE);
         System.out.println("el mínimo valor para char = " + Character.MIN_VALUE);
+
+        char espacio = ' ';
+        System.out.println("espacio = " + espacio);
+        char espacio2 = '\u0020';
+        System.out.println("espacio2 = " + espacio2);
+        char retroceso = '\b';
+        System.out.println("retroceso = " + retroceso);
+        char tabulador = '\t';
+        char nuevaLinea = '\n';
+        char retornoCarro = '\r';
     }
 
 }
