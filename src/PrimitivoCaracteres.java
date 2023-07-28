@@ -23,6 +23,8 @@ public class PrimitivoCaracteres {
         char tabulador = '\t';
         char nuevaLinea = '\n';
         char retornoCarro = '\r';
+
+        System.out.println("char corresponde en byte = " + Character.BYTES);
     }
 
 }
