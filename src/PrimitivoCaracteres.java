@@ -22,9 +22,19 @@ public class PrimitivoCaracteres {
         System.out.println("retroceso = " + retroceso);
         char tabulador = '\t';
         char nuevaLinea = '\n';
-        char retornoCarro = '\r';
+        char retornoCarro = '\r'; // es parecido al \n, en windows el resultado de \n y \r es similar, esto funciona en algunas
+        //distribuciones de linux  y en versiones antiguas de Mac, en windows se usan juntos así "\n\r"
 
-        System.out.println("char corresponde en byte = " + Character.BYTES);
+        System.out.println("char corresponde en byte:" + espacio+ Character.BYTES); //Un string tambien puede concatenar una variable de tipo char
+        System.out.println("char corresponde en byte:" + retroceso+ Character.BYTES);// lo que hace es retroceder y eliminar el caracter anterior, en este caso desaprecen los  dos puntos ":"
+        System.out.println("char corresponde en byte:" + tabulador+ Character.BYTES);//deja un espacio como de sangria llamado espacio "tabulador"
+        System.out.println("char corresponde en \tbyte:" + tabulador+ Character.BYTES);
+        System.out.println("char corresponde en byte:" + nuevaLinea+ Character.BYTES);//esto genera un salto de linea con el caracter especial \n
+        System.out.println("char corresponde en byte:" + retornoCarro+ Character.BYTES);
+        System.out.println("char corresponde en byte:" + System.getProperty("line.separator")+ Character.BYTES);//funciona parecido a usar \n y \r
+        System.out.println("char corresponde en byte:" + System.lineSeparator()+ Character.BYTES);//otra forma a la anterior
+
+        System.out.println("hola soy Anthony: "+ System.lineSeparator()+  Character.BYTES);
     }
 
 }
