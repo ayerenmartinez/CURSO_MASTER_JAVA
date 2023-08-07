@@ -5,13 +5,11 @@ public class EjemploString {
         boolean esIgual = curso == curso2;
         System.out.println("esIgual = " + esIgual);
         boolean esIgual2 = curso.equals(curso2);
-        System.out.println("esIgual2 = " + esIgual2);
-        
+        System.out.println("curso.equals(curso2) = " + esIgual2);
         boolean esIgual3 = curso.equalsIgnoreCase(curso2);
         System.out.println("esIgual3 = " + esIgual3);
-
         String curso3 = "Programación Java";
         esIgual = curso == curso3;
-        System.out.println("curso3 = " + curso3);
+        System.out.println("curso == curso3  =" + curso3);
     }
 }
