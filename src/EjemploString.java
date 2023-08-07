@@ -10,6 +10,6 @@ public class EjemploString {
         System.out.println("esIgual3 = " + esIgual3);
         String curso3 = "Programación Java";
         esIgual = curso == curso3;
-        System.out.println("curso == curso3  =" + curso3);
+        System.out.println("curso == curso3  =" + esIgual);
     }
 }
