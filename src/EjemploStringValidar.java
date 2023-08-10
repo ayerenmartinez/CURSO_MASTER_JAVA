@@ -1,0 +1,2 @@
+public class EjemploStringValidar {
+}
