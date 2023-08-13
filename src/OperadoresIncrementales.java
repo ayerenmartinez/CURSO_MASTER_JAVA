@@ -34,6 +34,10 @@ public class OperadoresIncrementales {
         a++ Post-incremento "Devuelve el valor de a, y luego incrementa en uno.
         --a Pre-decremento "Decrementa en uno, y luego devuelve el valor de a.
         a-- Post-decremento "Devuelve el valor de a, y luego decrementa en uno.
+
+        Los operadores de incremento y decremento se pueden colocar tanto antes como después
+        de la expresión que deseemos modificar pero sólo devuelven el valor modificado si
+        están delante.
          */
     }
 }
