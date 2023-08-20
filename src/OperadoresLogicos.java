@@ -14,5 +14,19 @@ public class OperadoresLogicos {
 
         boolean b3 = i == j &&  (k<l || m == true);
         System.out.println("b3 = " + b3);
+
+        //EL OPERADOR && (AND) TIENE MAYOR PRECEDENCIA QUE EL OPERADOR || (OR)
+        boolean b4 = i == j || k < l && m == true;
+        System.out.println("b4 = " + b4);
+
+        boolean b5 = true || true && false;
+        System.out.println("b5 = " + b5);
+
+        boolean b6 = true || false && false || false;
+        System.out.println("b6 = " + b6);
+
+        boolean b7 = ((true || false) && false) || false;
+        System.out.println("b7 = " + b7);
+
     }
 }
