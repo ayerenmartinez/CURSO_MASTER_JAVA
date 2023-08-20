@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Tarea6 {
     public static void main(String[] args) {
-        /*Obtener el nombre mas largo de tres personas
+        /*
           Obtener el nombre mas largo de tres personas, según los siguientes requerimientos
           Mediante el teclado pedir el nombre completo (nombre + apellido) de tres miembros
           de la familia o amigos usando la clase JOptionPane y método showInputDialog().
