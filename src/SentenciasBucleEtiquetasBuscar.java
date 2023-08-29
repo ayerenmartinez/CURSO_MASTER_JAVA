@@ -18,7 +18,7 @@ public class SentenciasBucleEtiquetasBuscar {
                 }
             }
         }
-        System.out.println("Encontrado = " + cantidad + " veces la palabra");
+        System.out.println("Encontrado = " + cantidad + " veces la palabra " + palabra + " en la frase");
     }
 
     public static void buscarUnCaracter(){
