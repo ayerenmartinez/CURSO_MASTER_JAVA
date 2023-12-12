@@ -20,7 +20,7 @@ public class EjemploArreglosNumMayor {
 
         }
         System.out.println("max = "+ max);
-         
+
         */
         int max = 0;
         for(int i=1;i<a.length;i++){
