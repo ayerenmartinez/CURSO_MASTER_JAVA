@@ -5,6 +5,7 @@ public class EjemploMatricesBuscar {
         boolean encontrado = false;
         int i;
         int j = 0;
+
         buscar: for (i=0; i < matrizDeEnteros.length; i++) {
             for (j = 0; j < matrizDeEnteros[i].length; j++) {
                 if(matrizDeEnteros[i][j] == elementoBuscar){
