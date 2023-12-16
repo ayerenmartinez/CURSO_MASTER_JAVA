@@ -2,11 +2,11 @@ package poo;
 
 public class EjemploAutomovil {
     public static void main(String[] args) {
-        Automovil automovil = new Automovil();
-        automovil.fabricante = "Subaru";
-        automovil.modelo = "Impreza";
-        automovil.cilindrada = 2.0;
-        automovil.color = "Blanco";
+        Automovil subaru = new Automovil();
+        subaru.fabricante = "Subaru";
+        subaru.modelo = "Impreza";
+        subaru.cilindrada = 2.0;
+        subaru.color = "Blanco";
 
         Automovil mazda = new Automovil();
         mazda.fabricante = "Mazda";
@@ -14,14 +14,8 @@ public class EjemploAutomovil {
         mazda.cilindrada = 3.0;
         mazda.color = "Rojo";
 
-        System.out.println("automovil.fabricante = " + automovil.fabricante);
-        System.out.println("auto.modelo = "+automovil.modelo);
-        System.out.println("automovil.color = " + automovil.color);
-        System.out.println("automovil.cilindrada = " + automovil.cilindrada);
-
-        System.out.println("mazda.fabricante = " + mazda.fabricante);
-        System.out.println("mazda.modelo = " + mazda.modelo);
-        System.out.println("mazda.color = " + mazda.color);
-        System.out.println("mazda.cilindrada = " + mazda.cilindrada);
+        System.out.println(mazda.detalle2());
+        System.out.println();
+        System.out.println(subaru.detalle2());
     }
 }
