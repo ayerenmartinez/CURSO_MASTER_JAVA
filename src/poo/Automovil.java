@@ -8,6 +8,29 @@ public class Automovil {
 
     private int capacidadEstanque = 40;
 
+    public Automovil() {
+
+    }
+
+    public Automovil(String fabricante, String modelo){
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+    }
+
+    public Automovil(String fabricante, String modelo, String color) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+    }
+
+    public Automovil(String fabricante, String modelo, String color, double cilindrada, int capacidadEstanque) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.cilindrada = cilindrada;
+        this.capacidadEstanque = capacidadEstanque;
+    }
+
     /*Metodo no recomendable, ya que no recomienda las impresiones en las clases*/
     public void detalle(){
         System.out.println("automovil.fabricante = " + this.getFabricante());
