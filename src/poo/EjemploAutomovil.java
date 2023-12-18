@@ -14,6 +14,8 @@ public class EjemploAutomovil {
         mazda.setCilindrada(3.0);
         mazda.setColor("Rojo");
 
+        Automovil nissan = new Automovil("Nissan","Navara","Gris oscuro",3.5,50);
+
         System.out.println(mazda.detalle2());
         System.out.println();
         System.out.println(subaru.detalle2());
@@ -25,5 +27,7 @@ public class EjemploAutomovil {
         System.out.println(mazda.acelerarFrenar(4000));
         System.out.println("Kilometros por litro: "+subaru.calcularConsumo(300,0.75f));
         System.out.println("Kilometros por litro: "+subaru.calcularConsumo(300,75));
+
+        System.out.println(nissan.verDetalle());
     }
 }
