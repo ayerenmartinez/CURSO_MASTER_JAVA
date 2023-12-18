@@ -15,6 +15,13 @@ public class EjemploAutomovil {
         mazda.setColor("Rojo");
 
         Automovil nissan = new Automovil("Nissan","Navara","Gris oscuro",3.5,50);
+        Automovil nissan2 = new Automovil("Nissan","Navara","Gris oscuro",3.5,50);
+        Automovil nissan3 = new Automovil();
+
+        System.out.println("son iguales => "+(nissan == nissan2));
+        System.out.println("son iguales => "+(nissan.equals(nissan2)));
+        System.out.println("son iguales sobrescribiendo con equals=> "+(nissan.equals(nissan2)));
+        System.out.println("son iguales => "+ nissan3.equals(nissan2));
 
         System.out.println(mazda.detalle2());
         System.out.println();
