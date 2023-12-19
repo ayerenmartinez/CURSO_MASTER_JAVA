@@ -10,7 +10,9 @@ public class Automovil {
 
     private int capacidadEstanque = 40;
 
-    static String colorPatente = "Naranja";
+    private static String colorPatente = "Naranja";
+
+    private static int capacidadEstanqueEstatico = 30;
 
     public Automovil() {
 
@@ -60,7 +62,7 @@ public class Automovil {
                 "\nauto.modelo = " + this.getModelo() +
                 "\nautomovil.color = " + this.getColor() +
                 "\nautomovil.cilindrada = " + this.getCilindrada() +
-                "\nautomovil.patenteColor =" + colorPatente;
+                "\nautomovil.patenteColor = " + colorPatente;
     }
 
     public String acelerar(int rpm){
@@ -125,6 +127,17 @@ public class Automovil {
         this.capacidadEstanque = capacidadEstanque;
     }
 
+    public static float calcularConsumoEstatico(int km, int porcentajeBencina){
+        return km/(Automovil.capacidadEstanqueEstatico*(porcentajeBencina/100f));
+    }
+    public static String getColorPatente() {
+        return colorPatente;
+    }
+
+    public static void setColorPatente(String colorPatente) {
+        Automovil.colorPatente = colorPatente;
+    }
+
     @Override
     public boolean equals(Object obj) {
 
@@ -151,4 +164,6 @@ public class Automovil {
                 ", capacidadEstanque=" + capacidadEstanque +
                 '}';
     }
+
+
 }
