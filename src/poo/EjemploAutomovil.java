@@ -6,16 +6,16 @@ public class EjemploAutomovil {
         subaru.setFabricante("Subaru");
         subaru.setModelo("Impreza");
         subaru.setCilindrada(2.0);
-        subaru.setColor("Blanco");
+        subaru.setColor(Color.BLANCO);
 
         Automovil mazda = new Automovil();
         mazda.setFabricante("Mazda");
         mazda.setModelo("BT-50");
         mazda.setCilindrada(3.0);
-        mazda.setColor("Rojo");
+        mazda.setColor(Color.ROJO);
 
-        Automovil nissan = new Automovil("Nissan","Navara","Gris oscuro",3.5,50);
-        Automovil nissan2 = new Automovil("Nissan","Navara","Gris oscuro",3.5,50);
+        Automovil nissan = new Automovil("Nissan","Navara",Color.GRIS,3.5,50);
+        Automovil nissan2 = new Automovil("Nissan","Navara",Color.GRIS,3.5,50);
         Automovil nissan3 = new Automovil();
 
         System.out.println("son iguales => "+(nissan == nissan2));
