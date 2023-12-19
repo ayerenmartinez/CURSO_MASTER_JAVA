@@ -10,6 +10,8 @@ public class Automovil {
 
     private int capacidadEstanque = 40;
 
+    static String colorPatente = "Naranja";
+
     public Automovil() {
 
     }
@@ -57,7 +59,8 @@ public class Automovil {
         return  "automovil.fabricante = " + this.getFabricante() +
                 "\nauto.modelo = " + this.getModelo() +
                 "\nautomovil.color = " + this.getColor() +
-                "\nautomovil.cilindrada = " + this.getCilindrada();
+                "\nautomovil.cilindrada = " + this.getCilindrada() +
+                "\nautomovil.patenteColor =" + colorPatente;
     }
 
     public String acelerar(int rpm){
