@@ -30,6 +30,15 @@ public class Automovil {
 
     private static final String COLOR_GRIS = "Gris Oscuro";
 
+    private TipoAutomovil tipo;
+
+    public TipoAutomovil getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoAutomovil tipo) {
+        this.tipo = tipo;
+    }
 
     public static int getCapacidadEstanqueEstatico() {
         return capacidadEstanqueEstatico;
@@ -89,6 +98,7 @@ public class Automovil {
         return  "auto.id = " + this.id+
                 "\nautomovil.fabricante = " + this.getFabricante() +
                 "\nauto.modelo = " + this.getModelo() +
+                "\nauto.tipo = "+this.getTipo().getNombre() +
                 "\nautomovil.color = " + this.color.getColor() +
                 "\nautomovil.cilindrada = " + this.getCilindrada() +
                 "\nautomovil.patenteColor = " + Automovil.colorPatente.getColor();

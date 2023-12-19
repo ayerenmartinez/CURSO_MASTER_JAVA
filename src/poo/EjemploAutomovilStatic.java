@@ -7,13 +7,18 @@ public class EjemploAutomovilStatic {
         Automovil subaru = new Automovil("Subaru","Impreza");
         subaru.setCilindrada(2.0);
         subaru.setColor(Color.AZUL);
+        subaru.setTipo(TipoAutomovil.HATCHBACK);
         System.out.println(subaru.verDetalle());
         System.out.println();
         Automovil mazda = new Automovil("Mazda","BT-50",Automovil.COLOR_ROJO,3.0);
+        mazda.setTipo(TipoAutomovil.PICKUP);
         System.out.println(mazda.verDetalle());
         System.out.println("Automovil.getColorPatente() => "+Automovil.getColorPatente().getColor());
         System.out.println("Kilometros por litro => "+Automovil.calcularConsumoEstatico(300,60));
         System.out.println("VELOCIDAD MÁXIMA EN CARRETERA => "+Automovil.VELOCIDAD_MAX_CARRETERA);
         System.out.println("VELOCIDAD MÁXIMA EN CIUDAD => "+Automovil.VELOCIDAD_MAX_CIUDAD);
+
+        TipoAutomovil tipoSubaru = subaru.getTipo();
+        System.out.println("Tipo subaru: "+tipoSubaru.getNombre());
     }
 }
