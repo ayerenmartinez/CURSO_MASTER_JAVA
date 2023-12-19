@@ -3,6 +3,8 @@ package poo;
 import java.util.Objects;
 
 public class Automovil {
+
+    private int id;
     private String fabricante;
     private String modelo;
     private String color = "gris";
@@ -12,13 +14,24 @@ public class Automovil {
 
     private static String colorPatente = "Naranja";
 
+    private static int ultimoId;
+
+    public static int getCapacidadEstanqueEstatico() {
+        return capacidadEstanqueEstatico;
+    }
+
+    public static void setCapacidadEstanqueEstatico(int capacidadEstanqueEstatico) {
+        Automovil.capacidadEstanqueEstatico = capacidadEstanqueEstatico;
+    }
+
     private static int capacidadEstanqueEstatico = 30;
 
     public Automovil() {
-
+        this.id = ++ultimoId;
     }
 
     public Automovil(String fabricante, String modelo){
+        this();
         this.fabricante = fabricante;
         this.modelo = modelo;
     }
@@ -58,7 +71,8 @@ public class Automovil {
     podria usarse sin problemas una variable de tipo String*/
 
     public String verDetalle(){
-        return  "automovil.fabricante = " + this.getFabricante() +
+        return  "auto.id = " + this.id+
+                "\nautomovil.fabricante = " + this.getFabricante() +
                 "\nauto.modelo = " + this.getModelo() +
                 "\nautomovil.color = " + this.getColor() +
                 "\nautomovil.cilindrada = " + this.getCilindrada() +
@@ -157,6 +171,7 @@ public class Automovil {
     @Override
     public String toString() {
         return "Automovil{" +
+                "id='"+id+'\''+
                 "fabricante='" + fabricante + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", color='" + color + '\'' +
@@ -165,5 +180,11 @@ public class Automovil {
                 '}';
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 }
