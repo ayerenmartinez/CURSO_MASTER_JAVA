@@ -2,7 +2,7 @@ package poo;
 
 public enum TipoAutomovil {
     SEDAN("Sedan","Auto mediano",4),
-    STATION_WAGON("Station Wagon","Auto grande",4),
+    STATION_WAGON("Station Wagon","Auto grande",5),
     HATCHBACK("Hatchback","Auto compacto",4),
     PICKUP("Pickup","Camioneta",4),
     COUPE("Coupé","Auto pequeño",2),
