@@ -13,5 +13,7 @@ public class EjemploAutomovilStatic {
         System.out.println(mazda.verDetalle());
         System.out.println("Automovil.getColorPatente() => "+Automovil.getColorPatente());
         System.out.println("Kilometros por litro => "+Automovil.calcularConsumoEstatico(300,60));
+        System.out.println("VELOCIDAD MÁXIMA EN CARRETERA => "+Automovil.VELOCIDAD_MAX_CARRETERA);
+        System.out.println("VELOCIDAD MÁXIMA EN CIUDAD => "+Automovil.VELOCIDAD_MAX_CIUDAD);
     }
 }

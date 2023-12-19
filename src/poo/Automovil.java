@@ -16,6 +16,10 @@ public class Automovil {
 
     private static int ultimoId;
 
+    public static final Integer VELOCIDAD_MAX_CARRETERA = 120;
+
+    public static final Integer VELOCIDAD_MAX_CIUDAD = 60;
+
     public static int getCapacidadEstanqueEstatico() {
         return capacidadEstanqueEstatico;
     }
