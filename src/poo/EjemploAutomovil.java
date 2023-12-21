@@ -5,17 +5,19 @@ public class EjemploAutomovil {
         Automovil subaru = new Automovil();
         subaru.setFabricante("Subaru");
         subaru.setModelo("Impreza");
-        subaru.setCilindrada(2.0);
+        subaru.setMotor(new Motor(2.0,TipoMotor.BENCINA));
         subaru.setColor(Color.BLANCO);
+        subaru.setEstanque(new Estanque());
 
         Automovil mazda = new Automovil();
         mazda.setFabricante("Mazda");
         mazda.setModelo("BT-50");
-        mazda.setCilindrada(3.0);
+        Motor motorMazda = new Motor(3.0,TipoMotor.BENCINA);
+        mazda.setMotor(motorMazda);
         mazda.setColor(Color.ROJO);
 
-        Automovil nissan = new Automovil("Nissan","Navara",Color.GRIS,3.5,50);
-        Automovil nissan2 = new Automovil("Nissan","Navara",Color.GRIS,3.5,50);
+        Automovil nissan = new Automovil("Nissan","Navara",Color.GRIS,new Motor(3.0,TipoMotor.DIESEL),new Estanque());
+        Automovil nissan2 = new Automovil("Nissan","Navara",Color.GRIS,new Motor(3.5,TipoMotor.DIESEL),new Estanque());
         Automovil nissan3 = new Automovil();
 
         System.out.println("son iguales => "+(nissan == nissan2));
