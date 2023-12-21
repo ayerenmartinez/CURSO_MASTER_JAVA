@@ -29,6 +29,7 @@ public class Automovil {
 
     private static final String COLOR_GRIS = "Gris Oscuro";
 
+    private int indiceRuedas;
 
 
     public TipoAutomovil getTipo() {
@@ -51,6 +52,7 @@ public class Automovil {
 
     public Automovil() {
         this.id = ++ultimoId;
+        this.ruedas = new Rueda[5];
     }
 
     public Automovil(String fabricante, String modelo){
@@ -257,5 +259,12 @@ public class Automovil {
 
     public void setRuedas(Rueda[] ruedas) {
         this.ruedas = ruedas;
+    }
+
+    public Automovil addRueda(Rueda rueda){
+        if(indiceRuedas < this.ruedas.length){
+            this.ruedas[indiceRuedas++] = rueda;
+        }
+        return this;
     }
 }
