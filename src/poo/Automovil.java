@@ -2,7 +2,7 @@ package poo;
 
 import java.util.Objects;
 
-public class Automovil {
+public class Automovil implements Comparable{
 
     private int id;
     private String fabricante;
@@ -212,9 +212,9 @@ public class Automovil {
                 "id='"+id+'\''+
                 "fabricante='" + fabricante + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
-                ", cilindrada=" + this.motor.getCilindrada() +
-                ", capacidadEstanque=" + this.estanque.getCapacidad() +
+                ", color='" + (this.color != null ? this.color : " ") + '\'' +
+                ", cilindrada=" + (this.motor != null ? this.motor.getCilindrada() : " ")+
+                ", capacidadEstanque=" + (this.estanque != null ? this.estanque.getCapacidad() :"") +
                 '}';
     }
 
@@ -267,4 +267,19 @@ public class Automovil {
         }
         return this;
     }
+
+    @Override
+    public int compareTo(Object o) {
+        Automovil a = (Automovil) o;
+        return this.fabricante.compareTo(a.fabricante);
+    }
+
+    /* Usando genericos, deberia colocar Automovil implements Comparable<Automovil>
+    y ya no seria necesario hacer el casting en el métodom comparteTo
+    @Override
+    public int compareTo(Automovil a) {
+        return this.fabricante.compareTo(a.fabricante);
+    }
+
+     */
 }
