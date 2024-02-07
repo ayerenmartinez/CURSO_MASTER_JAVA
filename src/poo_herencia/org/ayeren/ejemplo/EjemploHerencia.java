@@ -6,6 +6,7 @@ import poo_herencia.org.ayeren.pooherencia.Profesor;
 
 public class EjemploHerencia {
     public static void main(String[] args) {
+        System.out.println("======== Creando la isntancia de la clase Alumno");
         Alumno alumno = new Alumno();
         alumno.setNombre("Anthony");
         alumno.setApellido("Yeren");
@@ -13,7 +14,7 @@ public class EjemploHerencia {
         alumno.setNotaCastellano(5.5);
         alumno.setNotaHistoria(6.3);
         alumno.setNotaMatematica(4.9);
-
+        System.out.println("======== Creando la isntancia de la clase AlumnoInternacional");
         AlumnoInternacional alumnoInternacional = new AlumnoInternacional();
         alumnoInternacional.setNombre("Peter");
         alumnoInternacional.setApellido("Gosling");
@@ -24,12 +25,13 @@ public class EjemploHerencia {
         alumnoInternacional.setNotaCastellano(6.2);
         alumnoInternacional.setNotaHistoria(5.8);
         alumnoInternacional.setNotaMatematica(6.5);
-
+        System.out.println("======== Creando la isntancia de la clase Profesor");
         Profesor profesor = new Profesor();
         profesor.setNombre("Luci");
         profesor.setApellido("Perez");
         profesor.setAsignatura("Matemática");
 
+        System.out.println("======== - ========");
         System.out.println(alumno.getNombre()+" "+alumno.getApellido()
         +" "+alumno.getInstitucion());
 
